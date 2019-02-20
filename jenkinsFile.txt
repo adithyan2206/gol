@@ -21,8 +21,7 @@ pipeline {
  bat 'sc stop Tomcat'
  bat 'ping 127.0.0.1 -n 6'
  // copy war file from build target to webapp Tomcat folder
- bat 'xcopy /y
-E:\\projects\\SlaveAgent\\workspace\\GOL_Pipeline_latest\\gameoflife-web\\target\\gameoflife.war "E:\\projects\\apache-tomcat-8.0.53\\webapps"'
+ bat 'xcopy /y E:\\projects\\SlaveAgent\\workspace\\GOL_Pipeline_latest\\gameoflife-web\\target\\gameoflife.war "E:\\projects\\apache-tomcat-8.0.53\\webapps"'
  //invoke command to start tomcat service
  bat 'sc start Tomcat7'
  }
